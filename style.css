@@ -1,279 +1,110 @@
-.imgbanner {
-  width:100%;
-  height: 10%;
-  margin: 0px;
+/* Estilos generales para el cuerpo de la página */
+body {
+    margin: 0;
+    background-color: #CC9900;
+    font-family: Arial, sans-serif;
 }
+
+/* Estilos para el encabezado (header) */
 header {
-  margin: 0px;
-  width: 100%,
-  position: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    overflow: hidden;
 }
+
+/* Estilos para la imagen del banner */
+.imgbanner {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #FFFF00;
+    text-align: center;
+    font-size: 18px;
+}
+
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #FFFF00;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
-  float: left;
-  display: inline-block;
-  margin: 0;
-  font-family: Arial;
-  font-weight: bold;
-  font-size: 125%;
+    display: inline;
+    margin: 0;
+    padding: 0;
 }
 
 nav li a {
-  display: block;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  margin: 0;
-  border-style: solid;
-}
-#border {
-  border-style: solid;
-  border-width: thin;
-  border-color: black;
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 14px 16px;
+    border: 1px solid black;
 }
 
-nav li a:hover:not(.active) {
-  background-color: white;
+/* Estilos para dispositivos pequeños (usando media queries) */
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav li {
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
 }
 
+/* Estilos para el botón de menú en dispositivos pequeños */
+.menu-button {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+/* Estilos para el enlace activo */
 .active {
     background-color: #FF9933;
     color: black;
 }
-nav {
-  margin: 0;
-}
-.paragraph {
-  width: 50%;
-  padding-left: 5%;
-  font-size: 150%;
-  text-align: justify;
-  font-family: 'Times New Roman', serif;
-}
-.quiz {
-  padding-left: 5%;
-  font-size: 24px;
-  font-family: 'Times New Roman', serif;
-}
-#audsize {
-  width: 300px;
-  height: 30px;
-}
-#hcli {
-  list-style-type: none;
+
+/* Estilos para el contenido de la página */
+.content {
+    padding-top: 80px; /* Asegura que el contenido no se superponga con la barra de navegación */
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
 }
 
-#button {
-  width: 200px;
-  height: 50px;
-  font-weight: bold;
-  font-size: 28px;
-  color: red;
-}
-.catext {
-  padding-left: 5%;
-  font-size: 28px;
-  text-align: justify;
-  font-family: 'Times New Roman', serif;
-  font-weight: bold;
-  margin-bottom: 0;
-}
-#hcp {
-  margin-top: 0;
-  width: 100%;
-  padding-right: 5%;
-}
-#hcp2 {
-  margin-top: 0;
-  width: 75%;
-  padding-right: 5%;
-}
-#ca {
-  font-weight: bold;
-  margin-bottom: 0;
-}
-#hsimgpos {
-  float: right;
-  align: right;
-  padding: 0;
-  margin: 2%;
-}
-#hscap {
-  text-align: left;
-  padding-left: 5%;
-  padding-right: 0;
-  margin: 0;
-}
-#auref {
-  width: 40%;
-  float: right;
-  margin: 0;
-  padding-right: 2%;
-}
-.img {
-  border: solid;
-  width: 300;
-  height: 450;
-}
-.indextitle {
-  font-size: 250%;
-  text-align: center;
-  font-family: Arial;
-  font-weight:bold;
-}
-
-.title {
-  font-size: 250%;
-  text-align: left;
-  font-family: sans-serif;
-  font-weight: bold;
-  padding-left: 3%;
-}
-
-.imagecaption {
-  font-size: 150%;
-  font-weight:bold;
-  margin: 0;
-  text-align: right;
-}
-.imgref {
-  padding: 0;
-  margin: 0;
-  font-size: 113%;
-  text-align: left;
-  font-family: 'Times New Roman', serif;
-}
-.audioimg {
-  width: 15%;
-  height: 15%;
-  padding-right: 1%;
-  padding-bottom: 5%;
-  margin: 0;
-}
-.audio {
-  float: right;
-  padding-right: 2%;
-  padding-top: 0.5%;
-  margin: 0;
-  padding-bottom: 0%;
-}
-#hyperlink {
-  font-size: 150%;
-  font-family: 'Times New Roman', serif;
-  padding-top: 8%;
-  float: right;
-}
-#indeximg {
-  width:  100%;
-  height: 100%;
-  border-style: solid;
-}
-#aboutusicon {
-  width: 25%;
-  height: 25%;
-  align: left;
-}
-#imgpostionindex {
-  float: right;
-  aligh: right;
-  padding-right: 3%;
-  padding-top: 0;
-  padding-left: 3%;
-  margin-right: 0;
-  width: 50%;
-}
-#autext {
-  float: left;
-  margin: 0;
-  padding: 0;
-}
-#imgpostionau {
-  float: right;
-  align: right;
-  padding-right: 7%;
-  padding-top: 0;
-  margin: 0;
-}
-#wihimg {
-  width: 50%;
-  height: 60%;
-  align: right;
-  border: solid;
-  margin-left: 30%;
-}
-#imgpositionwih {
-  float: right;
-  align: right;
-  padding-right: 2%;
-  padding-left: 0;
-  width: 50%;
-  margin-right: 0;
-}
-#captionwih {
-  padding-left: 30%;
-  text-align: left;
-  padding-right: 5%;
-}
-#socials {
-    font-size: 250%;
-    text-align: left;
-    font-family: sans-serif;
-    font-weight: bold;
-}
-#vidpos {
-  align: center;
-}
-#vid {
-  width: 80%;
-  height: 60%;
-  border: solid;
-  margin-left: 5%;
-}
-#paragraphhc {
-  padding-left: 5%;
-  padding-right: 5%;
-  font-size: 150%;
-  text-align: justify;
-  font-family: 'Times New Roman', serif;
-}
-#hsimg {
-  border: solid;
-  width: 90%;
-  height: 70%;
-  margin-left: 5%;
-}
-#hsimg2 {
-  border: solid;
-  width: 70%;
-  height: 50%;
-  margin-left: 5%;
-}
-#capimgleft {
-  text-align: left;
-  padding-left: 5%;
-}
-footer p {
-  font-size: 18px;
-  padding-left: 1%;
-}
+/* Estilos para el pie de página */
 footer {
-  background-color: #FFFF00;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  position: fixed;
-  bottom: 0;
+    background-color: #FFFF00;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #333;
+    position: fixed;
+    bottom: 0;
 }
-body {
-  margin: 0px;
-  background-color: #CC9900;
+
+footer p {
+    font-size: 18px;
+    margin: 0;
 }
+
+/* Estilos adicionales para otros elementos de la página */
+/* ... */
