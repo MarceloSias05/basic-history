@@ -14,15 +14,24 @@ nav ul {
   padding: 0;
   overflow: hidden;
   background-color: #FFFF00;
+  text-align: center;
 }
 
 nav li {
-  float: left;
+  float: right;
   display: inline-block;
   margin: 0;
   font-family: Arial;
   font-weight: bold;
   font-size: 125%;
+  margin: 0 10px; /* Espaciado entre elementos */
+
+}
+@media screen and (max-width: 600px) {
+    nav li {
+        font-size: 14px;
+        margin: 0 5px;
+    }
 }
 
 nav li a {
